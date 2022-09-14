@@ -28,3 +28,8 @@ btnScroll.addEventListener('click', function () {
     behavior: 'smooth',
   });
 });
+
+// hide Loading after page load
+window.onload = function () {
+  document.querySelector('.loading-overlay').style.display = 'none';
+};
