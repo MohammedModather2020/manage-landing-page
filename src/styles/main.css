@@ -1,4 +1,30 @@
-/*
+/* 
+* Template Name             : Manage Landing Page
+* Start Date                : 12-9-2022
+* End Date                  : 
+* Last Update               : 
+* Version                   : 1.0.0
+* URL                       : https://mohammedmodather2020.github.io/manage-landing-page
+* GitHub URL                : https://github.com/MohammedModather2020/manage-landing-page.git
+* Contact US                : mohammedmodather144@gmail.com
+*/
+
+/* 
+* 1- General Style
+   1.0- Tailwind Components
+   1.1- Body Element
+* 2- Section Style
+   2.0- Navbar
+   2.1- Call To Action
+* 3- Common Style
+   3.0- Media Query
+   3.1- Scroll To Top
+/* 
+/** 1- Genral Style */
+
+/**  1.0- Tailwind Components  */
+
+/* 
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 
@@ -910,6 +936,8 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+/** 1.1- Body Element */
+
 body{
   background-image: url(../assets/images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
@@ -917,10 +945,9 @@ body{
   background-position: 90%  -25%;
 }
 
-.cta{
-  background-image: url(../assets/images/bg-simplify-section-desktop.svg);
-  background-repeat: no-repeat;
-}
+/** 2- Section Style */
+
+/**  2.0- Navbar */
 
 .navbar .hamburger{
   position: relative;
@@ -1000,6 +1027,17 @@ body{
   -o-transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+/** 2.1- Call To Action */
+
+.cta{
+  background-image: url(../assets/images/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+/** 3- Common Style */
+
+/**  3.0- Media Query */
+
 @media(max-width: 576px){
   body{
     background-position: 50px -50px;
@@ -1009,6 +1047,35 @@ body{
   .cta{
     background-image: url(../assets/images/bg-simplify-section-mobile.svg);
   }
+}
+
+/** 3.1- Scroll To Top */
+
+#scroll-top{
+  display: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background: #f25f3a;
+  position: fixed;
+  z-index: 9999;
+  right: 15px;
+  bottom: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#scroll-top i{
+  line-height: 40px;
+}
+
+#scroll-top:hover{
+  background: #f6866a;
 }
 
 .hover\:bg-brightRedLight:hover {
