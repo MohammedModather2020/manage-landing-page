@@ -12,6 +12,76 @@ body{
   background-image: url(../assets/images/bg-simplify-section-desktop.svg);
   background-repeat: no-repeat;
 }
+.navbar .hamburger{
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all .25s;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -ms-transition: all .25s;
+  -o-transition: all .25s;
+}
+.navbar .hamburger .hamburger-top,
+.navbar .hamburger .hamburger-middle,
+.navbar .hamburger .hamburger-bottom{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+.navbar .hamburger .hamburger-middle{
+  transform: translateY(7px);
+  -webkit-transform: translateY(7px);
+  -moz-transform: translateY(7px);
+  -ms-transform: translateY(7px);
+  -o-transform: translateY(7px);
+}
+.navbar .hamburger .hamburger-bottom{
+  transform: translateY(14px);
+  -webkit-transform: translateY(14px);
+  -moz-transform: translateY(14px);
+  -ms-transform: translateY(14px);
+  -o-transform: translateY(14px);
+}
+.navbar .open{
+  transform: translateY(0px);
+  transform: rotate(90deg);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+}
+.navbar .open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translate(6px);
+  -webkit-transform: rotate(45deg) translateY(6px) translate(6px);
+  -moz-transform: rotate(45deg) translateY(6px) translate(6px);
+  -ms-transform: rotate(45deg) translateY(6px) translate(6px);
+  -o-transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.navbar .open .hamburger-middle{
+  display: none;
+}
+.navbar .open .hamburger-bottom{
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+  -webkit-transform: rotate(-45deg) translateY(6px) translate(-6px);
+  -moz-transform: rotate(-45deg) translateY(6px) translate(-6px);
+  -ms-transform: rotate(-45deg) translateY(6px) translate(-6px);
+  -o-transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
 @media(max-width: 576px){
    body{
     background-position: 50px -50px;
