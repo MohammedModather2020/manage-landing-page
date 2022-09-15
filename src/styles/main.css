@@ -948,6 +948,7 @@ body{
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: 90%  -25%;
+  overflow-x: hidden !important;
 }
 
 /** 2- Section Style */
