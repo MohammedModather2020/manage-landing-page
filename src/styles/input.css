@@ -33,6 +33,9 @@ body{
   background-position: 90%  -25%;
   overflow-x: hidden !important;
 }
+html{
+  overflow-x: hidden !important;
+}
 /** 2- Section Style */
 /**  2.0- Navbar */
 .navbar .hamburger{

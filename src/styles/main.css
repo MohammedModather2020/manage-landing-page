@@ -951,6 +951,10 @@ body{
   overflow-x: hidden !important;
 }
 
+html{
+  overflow-x: hidden !important;
+}
+
 /** 2- Section Style */
 
 /**  2.0- Navbar */
